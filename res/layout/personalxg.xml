@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlepersonal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="会员名"
+            android:textColor="#545454"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+                <EditText
+            android:id="@+id/name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:layout_centerVertical="true"
+            android:textColor="#aaaaaa" />
+
+     <Button
+                    android:id="@+id/bt_yzm"
+                    android:visibility="gone"
+                    android:background="@drawable/land_bg"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#ffffff"
+                    android:text="验证码" />
+        </RelativeLayout>
+
+    
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#545454"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F0F0F0"
+            android:textColor="#aaaaaa" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_ghh"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="工会会员号"
+            android:textColor="#545454"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/hygh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F0F0F0"
+            android:textColor="#aaaaaa" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E0E0E0" />
+
+</LinearLayout>

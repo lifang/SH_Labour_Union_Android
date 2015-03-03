@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <include 
+    layout="@layout/include_titleback"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="42dp"
+      android:gravity="center_vertical"
+      android:paddingLeft="12dp"
+      android:paddingRight="12dp"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/postsize"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+  		  android:singleLine="true"
+  		  android:textColor="#7e0101"
+          android:text="" />
+
+  </LinearLayout>
+
+
+<com.examlpe.ices.util.XListView
+    android:id="@+id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:fadingEdge="none" 
+        android:scrollbars="none" >
+</com.examlpe.ices.util.XListView>
+</LinearLayout>

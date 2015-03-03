@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+  <LinearLayout
+        android:id="@+id/load"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/scl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/fanhui"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/head_bg"
+                    android:orientation="vertical"
+                    android:padding="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center" >
+<ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+           
+                android:src="@drawable/newestback" />
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="返回"
+                            android:textColor="#5D5D5D"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="fill_parent"
+                            android:background="#c40303" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="标题：市总公会启动2015年工资保障工作重点研讨"
+                            android:textColor="#404040"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="时间：2014-10-18  10:18"
+                        android:textColor="#929292"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#D7D7D7" />
+
+      
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textSize="14sp"
+                        android:text="    公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工资保障工作重点研讨市总公会启动2015年工"
+                        android:textColor="#545454" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="16dp" >
+
+            <Button
+                android:id="@+id/bt_top"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:background="@drawable/top" />
+
+            
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

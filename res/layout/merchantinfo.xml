@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="#F0F0F0" >
+    
+<include 
+    layout="@layout/titlebar"/>
+ <LinearLayout
+        android:id="@+id/load"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp" 
+    android:padding="12dp"
+    android:background="@drawable/head_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_tt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/navshnghu1"
+        android:orientation="horizontal"
+         >
+
+        <LinearLayout
+            android:id="@+id/tt_left"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_xt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统商户" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tt_right"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+               <TextView
+                android:id="@+id/tv_tg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团购商户" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+  <LinearLayout
+        android:id="@+id/load"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+ <LinearLayout
+        android:id="@+id/eva_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      
+        android:layout_gravity="center"
+        android:background="@color/ffffff"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <include layout="@layout/include_norecord" />
+    </LinearLayout>
+<com.examlpe.ices.util.XListView
+    android:id="@+id/lv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:fadingEdge="none" 
+        android:scrollbars="none" >
+</com.examlpe.ices.util.XListView>
+
+</LinearLayout>

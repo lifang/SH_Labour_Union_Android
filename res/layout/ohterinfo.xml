@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F0F0F0">
+
+    <include layout="@layout/titlepersonal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="42dp"
+        android:paddingRight="42dp"
+        android:paddingTop="30dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/complete" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/imageView1"
+            android:orientation="vertical"
+            android:paddingLeft="12dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="恭喜您，注册成功."
+                android:textColor="#7A7A7A"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成以下信息将获得更多权益和信息!"
+                android:textColor="#B5B5B5"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/edit_dl_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sfz" 
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="14dp"/>
+
+            <EditText
+                android:id="@+id/zgid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             android:background="#FFFFFF"
+             android:hint="请输入职工号"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E0E0E0" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_weight="1">
+               <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email" 
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="14dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             android:background="#FFFFFF"
+             android:hint="请输入邮件"
+                android:ems="10" >
+                  </EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp" 
+        android:gravity="center_vertical">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_land"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/land_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="完  成" />
+
+    </LinearLayout>
+
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

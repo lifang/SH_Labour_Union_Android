@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="94dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+       	android:descendantFocusability="blocksDescendants"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_jigou"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/jigouname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="红鼎创投"
+                android:textColor="#545454"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rephone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingRight="12dp" >
+
+              
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/xiangxil" />
+
+                <LinearLayout
+                    android:id="@+id/ll_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    >
+                      <TextView
+                    android:id="@+id/jigouphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:text="021-88888888"
+                    android:textColor="#969696"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/merchant_call"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/phone" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/jigouadress"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="#969696"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+<View 
+    android:layout_height="0.5dp"
+    android:layout_width="fill_parent"
+    android:background="#D9D9D9"/>
+</LinearLayout>

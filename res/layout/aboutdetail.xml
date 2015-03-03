@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_titleback" />
+ <LinearLayout
+        android:id="@+id/load"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+         android:background="#F0F0F0"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="6dp" >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+             android:background="#F0F0F0"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical">
+
+                <WebView 
+                    android:id="@+id/webview"
+                    android:background="#F0F0F0"
+                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#292929"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#545454"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textSize="14sp" />
+                           <ImageView
+                android:id="@+id/im"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+
+                />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/top"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="12dp"
+                android:background="@drawable/top" />
+
+ 
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

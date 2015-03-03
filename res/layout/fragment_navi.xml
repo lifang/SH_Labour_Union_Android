@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navi_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_sshouye"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+          
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/img_shouye"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/shouye"
+                android:duplicateParentState="true"  />
+
+            <TextView
+                android:id="@+id/tv_navi_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="首页" 
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="#545454"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/ll_zuixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:background="@drawable/nav_bg"
+             >
+
+            <ImageView
+                android:id="@+id/img_zhuixin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ndongtai"
+                android:duplicateParentState="true"  />
+
+            <TextView
+                android:id="@+id/tv_navi_contacts"
+                
+                android:layout_width="fill_parent"
+        		android:layout_height="48dp"
+        		android:paddingLeft="10dp"
+        		android:gravity="center_vertical"
+        		android:textSize="16sp"
+        		android:textColor="@drawable/nav_textbg"
+                android:text="最新动态" 
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/ll_weiquan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" 
+            android:background="@drawable/nav_bg"
+            >
+
+            <ImageView
+                android:id="@+id/img_weiquan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nweiquan"
+                android:duplicateParentState="true"  />
+
+            <TextView
+                android:id="@+id/tv_navi_search"
+                 
+                android:layout_width="fill_parent"
+        		android:layout_height="48dp"
+        		android:paddingLeft="10dp"
+        		android:gravity="center_vertical"
+        		android:textSize="16sp"
+        		android:textColor="@drawable/nav_textbg"
+                android:text="维权登记"
+                android:duplicateParentState="true"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/ll_jigou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:background="@drawable/nav_bg"
+           >
+
+            <ImageView
+                android:id="@+id/img_jigou"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/njigou"
+                android:duplicateParentState="true"  />
+
+            <TextView
+                android:id="@+id/tv_navi_my"
+                 
+                android:layout_width="fill_parent"
+        		android:layout_height="48dp"
+        		android:paddingLeft="10dp"
+        		android:gravity="center_vertical"
+        		android:textSize="16sp"
+        		android:textColor="@drawable/nav_textbg"
+                android:text="机构查询"
+                android:duplicateParentState="true"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/ll_gangwei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:background="@drawable/nav_bg"
+             >
+
+            <ImageView
+                android:id="@+id/img_gangwei"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ngangwei"
+                android:duplicateParentState="true"  />
+
+            <TextView
+                android:id="@+id/gangwei"
+                 
+                android:layout_width="fill_parent"
+        		android:layout_height="48dp"
+        		android:paddingLeft="10dp"
+        		android:gravity="center_vertical"
+        		android:textSize="16sp"
+        		android:textColor="@drawable/nav_textbg"
+                android:text="岗位查询"
+                android:duplicateParentState="true"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/ll_shanghu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" 
+            android:background="@drawable/nav_bg"
+            >
+
+            <ImageView
+                android:id="@+id/img_shanghu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nshanghu" 
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/tv_navi_contacts"
+                 
+                android:layout_width="fill_parent"
+        		android:layout_height="48dp"
+        		android:paddingLeft="10dp"
+        		android:gravity="center_vertical"
+        		android:textSize="16sp"
+        		android:textColor="@drawable/nav_textbg"
+                android:text="商户查询"
+                android:duplicateParentState="true"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/ll_jiankang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:background="@drawable/nav_bg"
+             >
+
+            <ImageView
+                android:id="@+id/img_jiankang"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/njiangkang"
+                android:duplicateParentState="true"  />
+
+            <TextView
+                android:id="@+id/jiankang"
+                 
+                android:layout_width="fill_parent"
+        		android:layout_height="48dp"
+        		android:paddingLeft="10dp"
+        		android:gravity="center_vertical"
+        		android:textSize="16sp"
+        		android:textColor="@drawable/nav_textbg"
+                android:text="健康服务" 
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/ll_xiangguan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:background="@drawable/nav_bg"
+             >
+
+            <ImageView
+                android:id="@+id/img_xiangguan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nxiangguan" 
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/xiangguan"
+                 
+                android:layout_width="fill_parent"
+        		android:layout_height="48dp"
+        		android:paddingLeft="10dp"
+        		android:gravity="center_vertical"
+        		android:textSize="16sp"
+        		android:textColor="@drawable/nav_textbg"
+                android:text="相关查询"
+                android:duplicateParentState="true"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/ll_xiazai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:background="@drawable/nav_bg"
+             >
+
+            <ImageView
+                android:id="@+id/img_xiazai"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nxiazai"
+                android:duplicateParentState="true"  />
+
+            <TextView
+                android:id="@+id/xiazai"
+                android:layout_width="fill_parent"
+        		android:layout_height="48dp"
+        		android:paddingLeft="10dp"
+        		android:gravity="center_vertical"
+        		android:textSize="16sp"
+        		android:textColor="@drawable/nav_textbg"
+                android:text="相关下载" 
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="#E0E0E0" />
+    </LinearLayout>
+
+</RelativeLayout>

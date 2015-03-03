@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/titlebarbg" >
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="54dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/titlebar_img_left"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+      
+            android:background="@drawable/merchantmenu" />
+    </LinearLayout>
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ll_left"
+        android:background="@color/black" />
+    <TextView
+        android:id="@+id/titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="商户信息"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+  <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="54dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/titlebar_img_right"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@drawable/merchanttx" />
+ </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ll_right"
+        android:background="@color/black" />
+
+</RelativeLayout>

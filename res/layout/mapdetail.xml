@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/include_titleback" >
+    </include>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_alignBottom="@+id/bmapView"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="学而好教育机构"
+                android:textColor="@color/forestgreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="地址"
+                android:textColor="@color/forestgreen"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/chakan"
+                android:layout_width="106dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bt_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/luxian" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="查看路线"
+                    android:textColor="@color/forestgreen"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/routeplan"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+       <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/titlebarbg" >
+   <LinearLayout
+       android:id="@+id/ll_left"
+        android:layout_width="48dp"
+        android:layout_height="fill_parent"
+      android:gravity="center"
+        android:orientation="vertical" >
+            <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+   
+        
+        android:background="@drawable/back" />
+    </LinearLayout>
+    
+
+
+    <TextView
+        android:id="@+id/titleStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:textSize="22dp"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:text="查看路线" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ll_left"
+        android:background="@color/black" />
+ 
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="14dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/weizhi" />
+
+            <TextView
+                android:id="@+id/myplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:paddingLeft="12dp"
+                android:text="我的位置"
+                android:textColor="#6D6C6A"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/myplace"
+                android:paddingTop="12dp"
+                android:src="@drawable/spread1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+            <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/routedian"/>
+
+            <ImageView
+                android:id="@+id/jiaohuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/routese" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/route_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:layout_marginBottom="20dp"
+            android:paddingRight="12dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/yuan" />
+
+            <TextView
+                android:id="@+id/mubiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:paddingLeft="12dp"
+                android:text=""
+                android:textColor="#AEAEAE"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="34dp"
+            android:paddingRight="34dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_bus"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/im_bus"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tax"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/im_tax"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tax" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buxing"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/im_buxing"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bx" />
+            </LinearLayout>
+        </LinearLayout>
+          <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#E0E0E0" />
+
+          <ListView
+              android:id="@+id/list"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+          </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

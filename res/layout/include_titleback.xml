@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/titlebarbg" >
+   <LinearLayout
+       android:id="@+id/ll_left"
+        android:layout_width="48dp"
+        android:layout_height="fill_parent"
+      android:gravity="center"
+        android:orientation="vertical" >
+            <Button
+        android:id="@+id/btn_back"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+   
+        
+        android:background="@drawable/back" />
+    </LinearLayout>
+    
+
+
+    <TextView
+        android:id="@+id/titleStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:textSize="22dp"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:text="" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ll_left"
+        android:background="@color/black" />
+ 
+</RelativeLayout>

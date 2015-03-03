@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_titleback" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="#F0F0F0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:padding="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/jobname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="16dp"
+                        android:text="酒店运营经理" />
+
+                    
+
+                    <TextView
+                        android:id="@+id/zprs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/jobname"
+                        android:text="（招聘人数）" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                      <TextView
+                        android:id="@+id/unitname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="4dp"
+                        android:text="中邦置业集团有限公司" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                        <TextView
+                        android:id="@+id/adress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="4dp"
+                        android:text="杭州 西湖区" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#F1B16B"
+                        android:text="面议" />
+                </RelativeLayout>
+            </LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E4E4E4" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical" >
+                <TextView                     
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:paddingTop="4dp"
+                        android:text="任职要求" />
+                <TextView  
+                    android:id="@+id/jobabout"                   
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:paddingTop="4dp"
+                        android:text="任职要求1" />
+                
+                
+                
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E4E4E4" />
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical" >
+                <TextView                     
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:paddingTop="4dp"
+                        android:text="职位联系方式" />
+                <TextView            
+                    android:id="@+id/lxfs"         
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:paddingTop="4dp"
+                        android:text="公司联系电话" />
+                
+                
+                
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E4E4E4" />
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical" >
+                <TextView   
+                    android:id="@+id/gsname"                     
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:paddingTop="4dp"
+                        android:text="公司介绍" />
+                <TextView  
+                    android:id="@+id/unitabout"                   
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:paddingTop="4dp"
+                        android:text="介绍详细内容" />
+                
+                
+                
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E4E4E4" />
+<RelativeLayout
+        android:id="@+id/tuijian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/xiangxil" />
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3"
+            
+            android:text="该公司其他职位招聘"
+            android:textColor="#F1B16B" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#E4E4E4" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#F0F0F0"
+    android:orientation="vertical" >
+<include 
+    layout="@layout/titlebar"></include>
+   <LinearLayout
+        android:id="@+id/load"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp" 
+    android:padding="12dp"
+    android:background="@drawable/head_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_tt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        
+        android:orientation="horizontal"
+         >
+
+        <LinearLayout
+            android:id="@+id/tt_left"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:background="@drawable/jigounav"
+                android:id="@+id/tv_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="职工援助服务中心" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tt_right"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+               <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="#5F5F5F"
+                android:text="职工法律援助中心" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+ <LinearLayout
+        android:id="@+id/eva_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      
+        android:layout_gravity="center"
+        android:background="@color/ffffff"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <include layout="@layout/include_norecord" />
+    </LinearLayout>
+<com.examlpe.ices.util.XListView
+    android:id="@+id/lv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:fadingEdge="none" 
+        android:scrollbars="none" >
+</com.examlpe.ices.util.XListView>
+
+</LinearLayout>
