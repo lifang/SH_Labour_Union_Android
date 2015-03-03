@@ -63,7 +63,7 @@ public class ClientUpdate {
 	private int newVerCode, verCodeMin;
 	public Builder dialog;
 	private File file = null;
-	private static int whitch = -1;// 用来记录是从哪种更新点击的取消 0为普通更新，1为强制更新
+	private static int whitch = -1;// 
 	private Update_AsyncTask mUpdate_AsyncTask = new Update_AsyncTask();
 	public static Update_AsyncTask mUpdate;
 	private boolean isConnOk = true;// 是否连接成功
