@@ -42,7 +42,7 @@ public class DownloadAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		// TODO Auto-generated method stub
+		
 		return myList.size();
 	}
 
